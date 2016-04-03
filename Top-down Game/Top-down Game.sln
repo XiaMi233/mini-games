@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2015
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Top-down Game.CSharp", "Top-down Game.CSharp.csproj", "{3A287AA5-0E5B-7FFF-21D1-959D57B2F331}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3A287AA5-0E5B-7FFF-21D1-959D57B2F331}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3A287AA5-0E5B-7FFF-21D1-959D57B2F331}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3A287AA5-0E5B-7FFF-21D1-959D57B2F331}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3A287AA5-0E5B-7FFF-21D1-959D57B2F331}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
