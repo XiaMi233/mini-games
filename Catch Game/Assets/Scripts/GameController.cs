@@ -6,6 +6,8 @@ public class GameController : MonoBehaviour {
 
   public Camera cam;
 
+  public HatController hatController;
+
   public GameObject bowlingBall;
 
   public Text timeText;
@@ -53,6 +55,7 @@ public class GameController : MonoBehaviour {
     splashScreen.SetActive(false);
     start.SetActive(false);
     StartCoroutine(SpawnBall());
+    hatController.toggleControl(true);
     playing = true;
   }
 
