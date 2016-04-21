@@ -14,30 +14,46 @@ public class GameController : MonoBehaviour {
 
   public GameObject restart;
 
+  public GameObject splashScreen;
+
+  public GameObject start;
+
   public float leftTime = 10f;
 
   float maxWidth;
+
+  public bool playing;
 
   void Start() {
     if (cam == null) {
       cam = Camera.main;
     }
+
+    playing = false;
+
     Vector3 upperCorner = new Vector3(Screen.width, Screen.height, 0.0f);
     Vector3 targetWidth = cam.ScreenToWorldPoint(upperCorner);
 
     maxWidth = targetWidth.x - bowlingBall.GetComponent<Renderer>().bounds.extents.x;
 
-    StartCoroutine(SpawnBall());
-
     UpdateTime();
   }
 
   void FixedUpdate() {
-    if (leftTime < 0) {
-      leftTime = 0;
+    if (playing) {
+      if (leftTime < 0) {
+        leftTime = 0;
+      }
+      leftTime -= Time.deltaTime;
+      UpdateTime();
     }
-    leftTime -= Time.deltaTime;
-    UpdateTime();
+  }
+
+  public void StartGame() {
+    splashScreen.SetActive(false);
+    start.SetActive(false);
+    StartCoroutine(SpawnBall());
+    playing = true;
   }
 
   void UpdateTime() {
