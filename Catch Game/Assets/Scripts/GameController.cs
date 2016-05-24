@@ -8,7 +8,7 @@ public class GameController : MonoBehaviour {
 
   public HatController hatController;
 
-  public GameObject bowlingBall;
+  public GameObject[] balls;
 
   public Text timeText;
 
@@ -36,7 +36,7 @@ public class GameController : MonoBehaviour {
     Vector3 upperCorner = new Vector3(Screen.width, Screen.height, 0.0f);
     Vector3 targetWidth = cam.ScreenToWorldPoint(upperCorner);
 
-    maxWidth = targetWidth.x - bowlingBall.GetComponent<Renderer>().bounds.extents.x;
+    maxWidth = targetWidth.x - balls[0].GetComponent<Renderer>().bounds.extents.x;
 
     UpdateTime();
   }
@@ -75,7 +75,7 @@ public class GameController : MonoBehaviour {
 
       Quaternion spanRotation = Quaternion.identity;
 
-      Instantiate(bowlingBall, spawnPosition, spanRotation);
+      Instantiate(balls[Random.Range(0, balls.Length)], spawnPosition, spanRotation);
       yield return new WaitForSeconds(Random.Range(1f, 2f));
     }
 
