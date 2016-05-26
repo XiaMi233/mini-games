@@ -1,0 +1,7 @@
+D:\Projects\mini-games\Angry Meteor\Temp\UnityVS_bin\Debug\Assembly-CSharp.dll
+D:\Projects\mini-games\Angry Meteor\Temp\UnityVS_bin\Debug\Assembly-CSharp.pdb
+D:\Projects\mini-games\Angry Meteor\Temp\UnityVS_bin\Debug\UnityEngine.dll
+D:\Projects\mini-games\Angry Meteor\Temp\UnityVS_bin\Debug\UnityEngine.xml
+D:\Projects\mini-games\Angry Meteor\Temp\UnityVS_obj\Debug\Angry Meteor.CSharp.csprojResolveAssemblyReference.cache
+D:\Projects\mini-games\Angry Meteor\Temp\UnityVS_obj\Debug\Assembly-CSharp.dll
+D:\Projects\mini-games\Angry Meteor\Temp\UnityVS_obj\Debug\Assembly-CSharp.pdb
